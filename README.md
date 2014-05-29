@@ -1,30 +1,3 @@
-
-  it('There should be 2 questions ', function() {
-    var controller = createController();
-    $httpBackend.flush();
-    expect($scope.questions.length).toBe(2);
-  });
-
-it('Question must be answered before continuing ', function() {
-    var controller = createController();
-    $httpBackend.flush();
-    $scope.validate();
-    expect($scope.currentQuestionIndex).toBe(0);
-  });
-
-it('Questionnaire must continue when answer has been given and validate is done', function() {
-    var controller = createController();
-    $httpBackend.flush();
-    $scope.questions[$scope.currentQuestionIndex].selectedAnswer = 1;
-    $scope.validate();
-    expect($scope.currentQuestionIndex).toBe(2);
-  });
-
-
-
-  
-
-
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
@@ -39,23 +12,23 @@ The seed app doesn't do much, just shows how to wire two controllers and views t
 
 ## Getting Started
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you started you can simply clone the repository and install the dependencies:
 
 ### Prerequisites
 
-You need git to clone the angular-seed repository. You can get it from
+You need git to clone the repository. You can get it from
 [http://git-scm.com/](http://git-scm.com/).
 
-We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
+We also use a number of node.js tools to initialize and test. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone angular-seed
+### Clone project
 
 Clone the angular-seed repository using [git][git]:
 
 ```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
+git clone https://github.com/hanseilers/mirrorapp-client.git
+cd mirrorapp-client
 ```
 
 ### Install Dependencies
@@ -302,8 +275,7 @@ along with a CI service (in Jenkins) hosted that will run unit and end to end te
 
 
 ## Contact
-
-For more information on AngularJS please check out http://angularjs.org/
+Hans Eilers
 
 [git]: http://git-scm.com/
 [bower]: http://bower.io
