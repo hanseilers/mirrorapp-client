@@ -1,0 +1,122 @@
+[
+  {
+    "answers": [
+      {
+        "nr": 0,
+        "score": 10,
+        "txt": "valt best mee"
+      },
+      {
+        "nr": 1,
+        "questions": [
+          {
+            "answers": [
+              {
+                "nr": 0,
+                "score": 10,
+                "txt": "Nee hoor, grapje"
+              },
+              {
+                "nr": 1,
+                "questions": [
+                  {
+                    "answers": [
+                      {
+                        "nr": 0,
+                        "score": 100,
+                        "txt": "Jahaa"
+                      },
+                      {
+                        "nr": 1,
+                        "score": 10,
+                        "selected": false,
+                        "txt": "Uhu"
+                      }
+                    ],
+                    "nr": 0,
+                    "selectedAnswerIndex": null,
+                    "txt": "Wow, dus best vervelend??"
+                  }
+                ],
+                "score": 100,
+                "selected": false,
+                "txt": "JA, heel erg"
+              }
+            ],
+            "nr": 0,
+            "selectedAnswerIndex": null,
+            "txt": "Ja echt zo erg?"
+          },
+          {
+            "answers": [
+              {
+                "nr": 0,
+                "score": 7,
+                "txt": "Zomaar"
+              },
+              {
+                "nr": 1,
+                "score": 102,
+                "txt": "Omdat"
+              }
+            ],
+            "nr": 1,
+            "selectedAnswerIndex": null,
+            "txt": "Waarom?"
+          }
+        ],
+        "score": 100,
+        "selected": false,
+        "txt": "heel erg"
+      }
+    ],
+    "nr": 0,
+    "selectedAnswerIndex": null,
+    "txt": "Hoe erg was het?"
+  },
+  {
+    "answers": [
+      {
+        "nr": 0,
+        "score": 50,
+        "txt": "1 week"
+      },
+      {
+        "nr": 1,
+        "score": 1,
+        "selected": false,
+        "txt": "1 jaar"
+      }
+    ],
+    "nr": 1,
+    "selectedAnswerIndex": null,
+    "txt": "Hoe lang geleden is het gebeurt?"
+  },
+  {
+    "answers": [
+      {
+        "nr": 0,
+        "score": "*2",
+        "txt": "Minder dan een week geleden"
+      },
+      {
+        "nr": 1,
+        "score": "*3",
+        "txt": "1 tot 4 weken geleden"
+      },
+      {
+        "nr": 2,
+        "score": "*5",
+        "txt": "Meer dan 4 weken geleden"
+      },
+      {
+        "nr": 3,
+        "score": "*10",
+        "txt": "Het gebeurt herhaaldelijk"
+      }
+    ],
+    "nr": 2,
+    "selectedAnswerIndex": null,
+    "txt": "Hoe lang geleden?"
+  }
+]
