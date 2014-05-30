@@ -1,0 +1,12 @@
+<div ng-repeat="question in questions">
+   <div ng-show="currentQuestionIndex == question.nr">
+    	{{question.txt}}
+      	<div ng-repeat="answer in question.answers" class="{{effect}}">
+        {{answer.txt}}
+    	<input type="radio" name="{{question.nr}}" ng-model="question.selectedAnswerIndex" ng-value="{{answer.nr}}"/> 
+      	</div>
+  	</div>
+</div>
+
+<button ng-click="validate()">Verder</button>
+<pre>{{questions}}</pre>
