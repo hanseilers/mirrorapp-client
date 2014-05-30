@@ -1,122 +1,478 @@
 [
   {
-    "answers": [
-      {
-        "nr": 0,
-        "score": 10,
-        "txt": "valt best mee"
-      },
-      {
-        "nr": 1,
-        "questions": [
-          {
-            "answers": [
-              {
-                "nr": 0,
-                "score": 10,
-                "txt": "Nee hoor, grapje"
-              },
-              {
-                "nr": 1,
-                "questions": [
-                  {
-                    "answers": [
-                      {
-                        "nr": 0,
-                        "score": 100,
-                        "txt": "Jahaa"
-                      },
-                      {
-                        "nr": 1,
-                        "score": 10,
-                        "selected": false,
-                        "txt": "Uhu"
-                      }
-                    ],
-                    "nr": 0,
-                    "selectedAnswerIndex": null,
-                    "txt": "Wow, dus best vervelend??"
-                  }
-                ],
-                "score": 100,
-                "selected": false,
-                "txt": "JA, heel erg"
-              }
-            ],
-            "nr": 0,
-            "selectedAnswerIndex": null,
-            "txt": "Ja echt zo erg?"
-          },
-          {
-            "answers": [
-              {
-                "nr": 0,
-                "score": 7,
-                "txt": "Zomaar"
-              },
-              {
-                "nr": 1,
-                "score": 102,
-                "txt": "Omdat"
-              }
-            ],
-            "nr": 1,
-            "selectedAnswerIndex": null,
-            "txt": "Waarom?"
-          }
-        ],
-        "score": 100,
-        "selected": false,
-        "txt": "heel erg"
-      }
-    ],
+    "txt": "Voor wie vul je deze test in?",
     "nr": 0,
     "selectedAnswerIndex": null,
-    "txt": "Hoe erg was het?"
-  },
-  {
     "answers": [
       {
+        "txt": "Mijzelf",
         "nr": 0,
-        "score": 50,
-        "txt": "1 week"
+        "questions": [
+          {
+            "txt": "Wat is er gebeurd?",
+            "nr": 0,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 50,
+                "txt": "Ongeval"
+              },
+              {
+                "nr": 1,
+                "score": 1,
+                "selected": false,
+                "txt": "Ernstig ongeluk op het werk, thuis of tijdens een vrijetijdsbesteding"
+              },
+              {
+                "nr": 2,
+                "score": 1,
+                "selected": false,
+                "txt": "Fysiek geweld"
+              },
+              {
+                "nr": 3,
+                "score": 1,
+                "selected": false,
+                "txt": "Geweld met gebruik van een wapen"
+              },
+              {
+                "nr": 4,
+                "score": 1,
+                "selected": false,
+                "txt": "Seksueel geweld"
+              },
+              {
+                "nr": 5,
+                "score": 1,
+                "selected": false,
+                "txt": "Andere ongewenste of onaangename seksuele ervaringen"
+              },
+              {
+                "nr": 6,
+                "score": 1,
+                "selected": false,
+                "txt": "Levensbedreigende ziekte of letsel"
+              },
+              {
+                "nr": 7,
+                "score": 1,
+                "selected": false,
+                "txt": "Diep menselijk leed"
+              },
+              {
+                "nr": 8,
+                "score": 1,
+                "selected": false,
+                "txt": "Plotselinge, gewelddadige dood"
+              },
+              {
+                "nr": 9,
+                "score": 1,
+                "selected": false,
+                "txt": "Plotselinge, onopzettelijke dood"
+              },
+              {
+                "nr": 10,
+                "score": 1,
+                "selected": false,
+                "txt": "Ernstig letsel, aanzienlijke schade of dood van iemand anders door uw toedoen"
+              },
+              {
+                "nr": 11,
+                "score": 1,
+                "selected": false,
+                "txt": "Brand of explosie"
+              },
+              {
+                "nr": 12,
+                "score": 1,
+                "selected": false,
+                "txt": "Blootstelling aan een giftige stof"
+              },
+              {
+                "nr": 13,
+                "score": 1,
+                "selected": false,
+                "txt": "Gewapende strijd of blootstelling aan een oorlogsgebied"
+              },
+              {
+                "nr": 14,
+                "score": 1,
+                "selected": false,
+                "txt": "Gevangenschap"
+              },
+              {
+                "nr": 15,
+                "score": 1,
+                "selected": false,
+                "txt": "(Natuur)ramp"
+              },
+              {
+                "nr": 16,
+                "score": 1,
+                "selected": false,
+                "txt": "Andere zeer stressvolle gebeurtenis of ervaring"
+              }
+            ],
+            "selectedAnswerIndex": null
+          }
+        ],
+        "score": 0
       },
       {
         "nr": 1,
-        "score": 1,
-        "selected": false,
-        "txt": "1 jaar"
+        "score": 0,
+        "txt": "Een ander",
+        "questions": [
+          {
+            "txt": "Voor wie vul je deze test in?",
+            "nr": 0,
+            "selectedAnswerIndex": null,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "txt": "Mijn kind"
+              },
+              {
+                "nr": 1,
+                "score": 0,
+                "txt": "Mijn partner"
+              },
+              {
+                "nr": 2,
+                "score": 0,
+                "txt": "Mijn ouder"
+              },
+              {
+                "nr": 3,
+                "score": 0,
+                "txt": "Mijn broer/zus"
+              },
+              {
+                "nr": 4,
+                "score": 0,
+                "txt": "Een vriend(-in)"
+              },
+              {
+                "nr": 5,
+                "score": 0,
+                "txt": "Een collega"
+              }
+            ]
+          },
+          {
+            "txt": "Wat is er gebeurd?",
+            "nr": 1,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 50,
+                "txt": "Ongeval"
+              },
+              {
+                "nr": 1,
+                "score": 1,
+                "selected": false,
+                "txt": "Ernstig ongeluk op het werk, thuis of tijdens een vrijetijdsbesteding"
+              },
+              {
+                "nr": 2,
+                "score": 1,
+                "selected": false,
+                "txt": "Fysiek geweld"
+              },
+              {
+                "nr": 3,
+                "score": 1,
+                "selected": false,
+                "txt": "Geweld met gebruik van een wapen"
+              },
+              {
+                "nr": 4,
+                "score": 1,
+                "selected": false,
+                "txt": "Seksueel geweld"
+              },
+              {
+                "nr": 5,
+                "score": 1,
+                "selected": false,
+                "txt": "Andere ongewenste of onaangename seksuele ervaringen"
+              },
+              {
+                "nr": 6,
+                "score": 1,
+                "selected": false,
+                "txt": "Levensbedreigende ziekte of letsel"
+              },
+              {
+                "nr": 7,
+                "score": 1,
+                "selected": false,
+                "txt": "Diep menselijk leed"
+              },
+              {
+                "nr": 8,
+                "score": 1,
+                "selected": false,
+                "txt": "Plotselinge, gewelddadige dood"
+              },
+              {
+                "nr": 9,
+                "score": 1,
+                "selected": false,
+                "txt": "Plotselinge, onopzettelijke dood"
+              },
+              {
+                "nr": 10,
+                "score": 1,
+                "selected": false,
+                "txt": "Ernstig letsel, aanzienlijke schade of dood van iemand anders door uw toedoen"
+              },
+              {
+                "nr": 11,
+                "score": 1,
+                "selected": false,
+                "txt": "Brand of explosie"
+              },
+              {
+                "nr": 12,
+                "score": 1,
+                "selected": false,
+                "txt": "Blootstelling aan een giftige stof"
+              },
+              {
+                "nr": 13,
+                "score": 1,
+                "selected": false,
+                "txt": "Gewapende strijd of blootstelling aan een oorlogsgebied"
+              },
+              {
+                "nr": 14,
+                "score": 1,
+                "selected": false,
+                "txt": "Gevangenschap"
+              },
+              {
+                "nr": 15,
+                "score": 1,
+                "selected": false,
+                "txt": "(Natuur)ramp"
+              },
+              {
+                "nr": 16,
+                "score": 1,
+                "selected": false,
+                "txt": "Andere zeer stressvolle gebeurtenis of ervaring"
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "De gebeurtenis...",
+            "answers": [
+              {
+                "nr": 0,
+                "score": "0",
+                "txt": "is je collega zelf overkomen"
+              },
+              {
+                "nr": 1,
+                "score": "0",
+                "txt": "is je collega getuige van geweest"
+              },
+              {
+                "nr": 2,
+                "score": "0",
+                "txt": "Heeft  je collega  kennis van genomen"
+              }
+            ],
+            "nr": 2,
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Heeft je collega deze gebeurtenis in het kader van werk meegemaakt?",
+            "nr": 3,
+            "selectedAnswerIndex": null,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "txt": "Ja"
+              },
+              {
+                "nr": 1,
+                "score": 0,
+                "selected": false,
+                "txt": "Nee"
+              }
+            ]
+          },
+          {
+            "txt": "Wanneer is het gebeurd?",
+            "answers": [
+              {
+                "nr": 0,
+                "score": "*2",
+                "txt": "Minder dan een week geleden"
+              },
+              {
+                "nr": 1,
+                "score": "*3",
+                "txt": "1 tot 4 weken geleden"
+              },
+              {
+                "nr": 2,
+                "score": "*5",
+                "txt": "Meer dan 4 weken geleden"
+              },
+              {
+                "nr": 3,
+                "score": "*10",
+                "txt": "Het gebeurt herhaaldelijk"
+              }
+            ],
+            "nr": 4,
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Hoe gaat het nu met je collega?",
+            "type": "steps",
+            "nr": 5,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Goed",
+                "end": "Slecht",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Heeft je collega last van beelden of gedachten?",
+            "type": "steps",
+            "nr": 6,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Nooit",
+                "end": "Altijd",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Is je collega sinds de gebeurtenis schrikachtig en/of waakzaam?",
+            "type": "steps",
+            "nr": 7,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Nooit",
+                "end": "Altijd",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Probeert je collega dingen die te maken hebben met de gebeurtenis te vermijden?",
+            "type": "steps",
+            "nr": 8,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Nooit",
+                "end": "Altijd",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Probeert je collega niet aan de gebeurtenis te denken?",
+            "type": "steps",
+            "nr": 9,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Nooit",
+                "end": "Altijd",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Hoe beoordeel je het huidige functioneren van je collega?",
+            "type": "steps",
+            "nr": 10,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Goed",
+                "end": "Slecht",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Ervaart je collega steun uit zijn of haar omgeving?",
+            "type": "steps",
+            "nr": 11,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Veel",
+                "end": "Geen",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Heeft je collega vertrouwen in zichzelf?",
+            "type": "steps",
+            "nr": 12,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Veel",
+                "end": "Geen",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          },
+          {
+            "txt": "Kan je collega goed omgaan met de problemen die hij of zij tegenkomt?",
+            "type": "steps",
+            "nr": 13,
+            "answers": [
+              {
+                "nr": 0,
+                "score": 0,
+                "start": "Goed",
+                "end": "Slecht",
+                "steps": 5
+              }
+            ],
+            "selectedAnswerIndex": null
+          }
+        ]
       }
-    ],
-    "nr": 1,
-    "selectedAnswerIndex": null,
-    "txt": "Hoe lang geleden is het gebeurt?"
-  },
-  {
-    "answers": [
-      {
-        "nr": 0,
-        "score": "*2",
-        "txt": "Minder dan een week geleden"
-      },
-      {
-        "nr": 1,
-        "score": "*3",
-        "txt": "1 tot 4 weken geleden"
-      },
-      {
-        "nr": 2,
-        "score": "*5",
-        "txt": "Meer dan 4 weken geleden"
-      },
-      {
-        "nr": 3,
-        "score": "*10",
-        "txt": "Het gebeurt herhaaldelijk"
-      }
-    ],
-    "nr": 2,
-    "selectedAnswerIndex": null,
-    "txt": "Hoe lang geleden?"
+    ]
   }
 ]

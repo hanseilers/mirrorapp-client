@@ -1,11 +1,21 @@
 <div ng-repeat="question in questions">
-   <div ng-show="currentQuestionIndex == question.nr">
+   <div ng-show="currentQuestionIndex == question.nr" class="left">
     	{{question.txt}}
       	<div ng-repeat="answer in question.answers" class="{{effect}}">
-        {{answer.txt}}
-    	<input type="radio" name="{{question.nr}}" ng-model="question.selectedAnswerIndex" ng-value="{{answer.nr}}"/> 
+      		<div ng-switch="question.type">
+      			<div ng-switch-when="steps">
+      				{{question.answers[0].start}}
+      				<input ng-repeat="step in Steps(question.answers[0].steps) track by $index" type="radio" name="{{$index}}" ng-model="question.selectedAnswerIndex" ng-value="{{$index}}"> 
+      				 {{question.answers[0].end}}
+      			</div>
+      			<div ng-switch-default>
+      				{{answer.txt}}
+	    			<input type="radio" name="{{question.nr}}" ng-model="question.selectedAnswerIndex" ng-value="{{answer.nr}}"/> 
+      			</div>
+      		</div>
+	        
       	</div>
-  	</div>
+    </div>
 </div>
 
 <button ng-click="validate()">Verder</button>

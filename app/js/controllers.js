@@ -22,10 +22,10 @@ angular.module('mirrorApp.controllers', [])
 				var currentQuestion = $scope.questions[$scope.currentQuestionIndex];
 				var currentAnswer = currentQuestion.answers[currentQuestion.selectedAnswerIndex];
 					//has an answer been given?
-				if (currentAnswer) {
+				if (answered(currentQuestion)) {
 					console.log('answer given')
 					//is there a subquestion?
-					if (currentAnswer.questions) {
+					if (hasSubquestion(currentQuestion)) {
 						console.log('subquestion')
 						$location.path('/questionnaire/' + $routeParams.path + "-" + currentAnswer.nr + "-0");
 					} else { //no subquestion	
@@ -45,13 +45,13 @@ angular.module('mirrorApp.controllers', [])
 							console.log('no more questions on this level');
 							//are there upper levels?
 
-							if (path.length > 1) {
-								console.log('continue on parent branch');
+							//if (path.length > 1) {
+							//	console.log('continue on parent branch');
 								//continue on parent branch
-								continueOnParentLevel(path, $location);
-							} else { //no upper levels, do the score
-								$location.path('/result/' + calculateScore($scope.questions));
-							}
+								continueOnParentLevel(path, $location, $scope);//rename
+							//} else { //no upper levels, do the score
+							//	$location.path('/result/' + calculateScore($scope.questions));
+							//}
 						}
 					};
 				} else { //no answer has been given
@@ -65,6 +65,26 @@ angular.module('mirrorApp.controllers', [])
 			}
 
 			$scope.currentQuestionIndex = $routeParams.path.split('-').pop() || 0;
+			
+			$scope.Steps = function(steps){
+				return new Array(steps);
+			}
+
+			var hasSubquestion = function(question){
+				if (question.type == "steps") {
+					return false
+				}else{
+					return question.answers[question.selectedAnswerIndex].questions
+				};
+			}
+
+			var answered = function(currentQuestion){
+				if (currentQuestion.type == "steps") {
+					return currentQuestion.selectedAnswerIndex!=null
+				}else{
+					return currentQuestion.answers[currentQuestion.selectedAnswerIndex]
+				};
+			}
 
 			var calculateScore = function(questions) {
 				var scoresAndFormulas = {
@@ -100,7 +120,7 @@ angular.module('mirrorApp.controllers', [])
 				});
 			}
 
-			var continueOnParentLevel = function(path, $location) {
+			var continueOnParentLevel = function(path, $location, $scope) {
 				//GET all questionnodes above current node
 					var parentNodes = findParentNodes(mirrorAPIservice.questions, path.slice(0, path.length), []);
 				//get index of parent node from path
@@ -111,13 +131,13 @@ angular.module('mirrorApp.controllers', [])
 
 				var newParentIndex = parseInt(path[pathIndex])+1;
 
-				while(!parentNodes[newParentIndex]){
+				while(!parentNodes[newParentIndex] && pathIndex>0){
 					pathIndex = pathIndex-2;
 					newParentIndex = pathIndex/2;
 				}
 
 				if(pathIndex==0){//we are at the root
-					$location.path('/questionnaire/'+ ++pathIndex);
+					$location.path('/result/' + calculateScore($scope.questions));
 				}else{
 					var parentAnswer = path[pathIndex];
 					//var parentQuestion = path[pathIndex-1];
